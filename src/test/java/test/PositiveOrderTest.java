@@ -1,8 +1,8 @@
-package Test;
+package test;
 
-import PageObject.MainPage;
-import PageObject.OrderForm;
-import PageObject.OrderPage;
+import pages.MainPage;
+import pages.OrderForm;
+import pages.OrderPage;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -12,8 +12,8 @@ public class PositiveOrderTest  extends BaseUITest {
     public void checkPositiveOrderScooterButtonInHeader(){
         driver.get(MainPage.URL);
         MainPage mainPage = new MainPage(driver);
-        mainPage.ClickButtonAcceptCookies();
-        mainPage.ClickOrderButtonInHeader();
+        mainPage.сlickButtonAcceptCookies();
+        mainPage.сlickOrderButtonInHeader();
 
         OrderPage orderPage = new OrderPage(driver);
         OrderForm orderForm = new OrderForm("Дмитрий","Васильев","Рахманинова д7.к3.","Стахановская","+79855044455","18.07.2022","сутки","чёрный жемчуг","Нужно позвонить за 30 минут");
@@ -40,9 +40,9 @@ public class PositiveOrderTest  extends BaseUITest {
     public void checkPositiveOrderScooterButtonInMiddle(){
         driver.get(MainPage.URL);
         MainPage mainPage = new MainPage(driver);
-        mainPage.ClickButtonAcceptCookies();
+        mainPage.сlickButtonAcceptCookies();
         mainPage.scrollToTheQuestionsSection();
-        mainPage.ClickOrderButtonInMiddle();
+        mainPage.сlickOrderButtonInMiddle();
 
         OrderPage orderPage = new OrderPage(driver);
         OrderForm orderForm = new OrderForm("Иван","Иванов","Рахманинова д7.к9.","Котельники","+79855043355","19.07.2022","двое суток","серая безысходность","Нужно позвонить в калитку");

@@ -1,4 +1,4 @@
-package Test.Data;
+package test.data;
 
 public class Answer {
     //Массив с верными ответами на вопросы в секции QA

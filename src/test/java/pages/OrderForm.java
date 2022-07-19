@@ -1,4 +1,4 @@
-package PageObject;
+package pages;
 
     public class OrderForm {
         private final String name;

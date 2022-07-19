@@ -1,12 +1,10 @@
-package Test;
+package test;
 
-import PageObject.MainPage;
+import pages.MainPage;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
-
-import static Test.Data.Answer.answerList;
+import static test.data.Answer.answerList;
 import static org.junit.Assert.*;
 
 @RunWith(Parameterized.class)
@@ -41,7 +39,7 @@ public class ComparisonOfResponsesTest extends BaseUITest {
     driver.get(MainPage.URL);
 
     MainPage mainPage = new MainPage(driver);
-    mainPage.ClickButtonAcceptCookies();
+    mainPage.сlickButtonAcceptCookies();
     mainPage.scrollToTheQuestionsSection();
     mainPage.clickQuestion(questionNumber);
     String actual = mainPage.getAnswer(questionNumber);
